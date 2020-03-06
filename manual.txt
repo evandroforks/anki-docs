@@ -1366,6 +1366,14 @@ override the inline styles (which have the highest priority). For example:
 '#typeans { font-size: 50px !important; }'. Instead of using CSS, you can also
 change the 'font-size' and 'font-family' by <<fields,customizing fields>>.
 
+If you wish to override the size of the typing box and don't want to change
+the font in the Fields dialog, you can override the default inline style
+using `!important`, like so:
+
+-----
+#typeans { font-size: 50px !important; }
+-----
+
 It is also possible to type in the answer for cloze deletion cards. To do this,
 add \{\{type:cloze:Text}} to both the front and back template, so the back looks
 something like this:
@@ -1539,6 +1547,10 @@ target it with the following:
 -----
 img#star { ... }
 -----
+
+You can explore the styling of cards interactively by using Chrome:
+
+https://ankitects.github.io/addon-docs/#/porting2.0?id=webview-changes
 
 [[fieldstyling]]
 == Field Styling ==
